@@ -1,0 +1,44 @@
+.footer {
+    background: #000;
+  
+    width: 100%;
+    padding: 35px 0px;
+    color:rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+.footerWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-between;
+}
+.socialLinks{
+
+display: flex;
+justify-content: flex-end;
+gap: 10px;
+}
+
+.footerInput{
+border: 0px;
+background: transparent;
+border-bottom: 1px solid gray;
+padding:10px;
+color:rgba(255, 255, 255, 0.5)
+
+
+}
+.footerInput:focus {
+    border: 0px;
+    color:rgba(255, 255, 255, 0.5)
+
+
+}
+
+

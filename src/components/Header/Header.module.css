@@ -1,0 +1,51 @@
+.header{
+background: rgba(59, 60, 61, 1);
+width: 100%;
+display: flex;
+justify-content: center;
+padding: 40px;
+}
+.headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+flex: 1;
+text-align: left;
+font-size: 20px;
+font-weight: 900;
+color: white;
+
+}
+.navigation{
+display: flex;
+gap: 65px;
+}
+.navLink{
+    text-decoration: none;
+    font-size: 15px;
+    color:#FFFFFF80;
+    transition:all 0.5s ease-in-out ;
+    &:hover {
+color:#FFFFFF;
+    }
+}
+
+
+
+.activeLink {
+    color:#FFFFFF;
+     text-decoration: none;
+    font-size: 15px;
+     transition:all 0.5s ease-in-out ;
+    &:hover {
+color:#FFFFFF80;
+    }
+}
+
+
+
+
+
+           
