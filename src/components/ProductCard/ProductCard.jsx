@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './ProductCard.module.css'
+import { CartContext } from '../../context/CartContext'
 
 const ProductCard = ({product}) => {
+    const {addToCart}= useContext(CartContext)
+
   return (
     <div className={styles.card}>
         <img className={styles.cardImg}  src={product.image} alt={`${product.name}`}/>
@@ -9,10 +12,10 @@ const ProductCard = ({product}) => {
         <div className={styles.priceButton}>
             
             <div className={styles.price}>
-                <p>ЦЕНА:</p>
+                <h3>ЦЕНА:</h3>
                 <p>{product.price} р.</p>
             </div>
-            <button>+</button>
+            <button className={styles.buttonAdd} onClick={()=> addToCart(product)}>+</button>
         </div>
     </div>
   )

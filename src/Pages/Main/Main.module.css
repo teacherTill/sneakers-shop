@@ -1,5 +1,5 @@
 .products {
     display: flex;
-    gap: 131px;
+    gap: 90px;
     flex-wrap: wrap;
 }

@@ -7,8 +7,12 @@ import styles from './Main.module.css'
 const Main = () => {
     const [products, setProducts] = useState([])
      const fetchProducts = async()=> {
+       try{ 
         const response = await axios.get('https://682d82ec4fae188947564789.mockapi.io/products')
        setProducts(response.data)
+    }catch(error){
+        console.error(error)
+    }
      }
     useEffect(()=> {
        fetchProducts()
@@ -19,7 +23,7 @@ const Main = () => {
         <h2 style={{fontSize:35}}>Товары</h2>
         <div className='container' style={{height:'1px', borderBottom:'2px solid rgba(234, 234, 234, 1)'}}></div>
         <div className={styles.products}>
-            {products && products.map(product=> <ProductCard product={product}/> )}
+            {products && products.map(product=> <ProductCard key={product.key} product={product}/> )}
         </div>
 
     </div>

@@ -1,22 +1,44 @@
 
 .card{
-max-width: 386px;
+max-width: 335px;
 width: 100%;
 border: 1px solid rgb(236, 234, 234);
-border-radius: 15px;
+border-radius: 30px;
+
+padding: 40px;
+margin-top: 45px;
 }
 .cardImg{
 width: 100%;
-height: auto;
+aspect-ratio: 16/9;
+object-fit: cover;
+
+
 }
 .title{
 
 }
 .priceButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
 .price{
 
+}
+.buttonAdd{
+    border: 1px solid rgba(104, 102, 102, 0.5);
+    border-radius: 50%;
+    padding:15px 25px;
+    font-size:30px ;
+    background-color: rgba(233, 233, 233, 0.5);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    &:hover{
+     background-color: lightcoral;
+     border-color: black;
+    }
 }
 
